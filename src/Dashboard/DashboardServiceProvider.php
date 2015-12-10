@@ -1,4 +1,4 @@
-<?php namespace Dashboard;
+<?php namespace Onderdelen\Dashboard;
 
 use Illuminate\Support\ServiceProvider;
 
