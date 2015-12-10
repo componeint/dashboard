@@ -13,7 +13,7 @@
 
     /* @ngInject */
     function config($stateProvider, $urlRouterProvider) {
-        //$urlRouterProvider.otherwise('/');
+        $urlRouterProvider.otherwise('/');
 
         $stateProvider
             .state('dashboard', {
