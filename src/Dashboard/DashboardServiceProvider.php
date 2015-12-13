@@ -1,5 +1,7 @@
 <?php namespace Onderdelen\Dashboard;
 
+use ReflectionClass;
+use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 
 class DashboardServiceProvider extends ServiceProvider
