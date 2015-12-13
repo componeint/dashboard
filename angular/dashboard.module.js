@@ -8,7 +8,7 @@
     angular
         .module('dashboard', [
             /* Shared */
-            'main',
+            'app.foundation',
             'widgets'
         ]);
 
