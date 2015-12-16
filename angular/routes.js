@@ -60,6 +60,14 @@
                 }
             });
 
+        function dashboard(viewName) {
+            if (viewName !== '') {
+                return './views/dashboard/' + appName(viewName) + '/' + fileDir(viewName) + '/' + fileName(viewName) + '.html';
+            } else {
+                return './views/app/app/home/home.html';
+            }
+        }
+
         function view(viewName) {
             if (viewName !== '') {
                 return './views/app/' + appName(viewName) + '/' + fileDir(viewName) + '/' + fileName(viewName) + '.html';
@@ -74,7 +82,6 @@
             } else {
                 return './views/app/app/home/home.html';
             }
-
         }
 
         function appName(v) {
@@ -106,6 +113,7 @@
                 return 'home';
             }
         }
+
     }
 
 })();
