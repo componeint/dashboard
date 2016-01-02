@@ -30,15 +30,15 @@
                         controller  : 'DashboardHeaderController',
                         controllerAs: 'header'
                     },
-                    'left@dashboard'  : {
-                        templateUrl : view('dashboard.left'),
+                    'sidenav@dashboard'  : {
+                        templateUrl : view('dashboard.sidenav'),
                         controller  : 'DashboardLeftController',
-                        controllerAs: 'left'
+                        controllerAs: 'sidenav'
                     },
-                    'right@dashboard' : {
-                        templateUrl : view('dashboard.right'),
+                    'aside@dashboard' : {
+                        templateUrl : view('dashboard.aside'),
                         controller  : 'DashboardRightController',
-                        controllerAs: 'right'
+                        controllerAs: 'aside'
                     },
                     'footer@dashboard': {
                         templateUrl : view('dashboard.footer'),
