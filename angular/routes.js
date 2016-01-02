@@ -32,7 +32,7 @@
                     },
                     'sidenav@dashboard'  : {
                         templateUrl : view('dashboard.sidenav'),
-                        controller  : 'DashboardLeftController',
+                        controller  : 'DashboardSidenavController',
                         controllerAs: 'sidenav'
                     },
                     'aside@dashboard' : {
