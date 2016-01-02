@@ -37,7 +37,7 @@
                     },
                     'aside@dashboard' : {
                         templateUrl : view('dashboard.aside'),
-                        controller  : 'DashboardRightController',
+                        controller  : 'DashboardAsideController',
                         controllerAs: 'aside'
                     },
                     'footer@dashboard': {
