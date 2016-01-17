@@ -1,7 +1,7 @@
 /**
+ * sidenav.controller.js
  * Created by anonymous on 03/01/16 4:38.
  */
-
 
 (function() {
     'use strict';
@@ -14,8 +14,7 @@
 
     /* @ngInject */
     function DashboardSidenavController($timeout, $mdSidenav, $log) {
-        var vm   = this;
-        vm.title = 'DashboardSidenavController';
+        var vm = this;
 
         vm.close = function() {
             $mdSidenav('left').close().then(function() {
