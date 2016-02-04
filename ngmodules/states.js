@@ -22,7 +22,7 @@
                 url     : '/dashboard',
                 views   : {
                     'layout@'         : {
-                        templateUrl : layout('dashboard.simple'),
+                        templateUrl : layout('themes.minimalist'),
                         controller  : 'DashboardController',
                         controllerAs: 'dashboard'
                     },
