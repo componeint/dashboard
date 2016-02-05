@@ -10,10 +10,10 @@
         .module('dashboard')
         .config(dashboardRouter);
 
-    dashboardRouter.$inject = ['$stateProvider', '$urlRouterProvider'];
+    dashboardRouter.$inject = ['$stateProvider', '$urlRouterProvider', 'layoutProvider'];
 
     /* @ngInject */
-    function dashboardRouter($stateProvider, $urlRouterProvider) {
+    function dashboardRouter($stateProvider, $urlRouterProvider, layoutProvider) {
         $urlRouterProvider.otherwise('/');
 
         $stateProvider
@@ -22,27 +22,27 @@
                 url     : '/dashboard',
                 views   : {
                     'layout@'         : {
-                        templateUrl : layout('themes.minimalist'),
+                        templateUrl : layoutProvider.layout('themes.minimalist'),
                         controller  : 'DashboardController',
                         controllerAs: 'dashboard'
                     },
                     'header@dashboard': {
-                        templateUrl : view('dashboard.header'),
+                        templateUrl : layoutProvider.view('dashboard.header'),
                         controller  : 'DashboardHeaderController',
                         controllerAs: 'header'
                     },
                     'sidenav@dashboard'  : {
-                        templateUrl : view('dashboard.sidenav'),
+                        templateUrl : layoutProvider.view('dashboard.sidenav'),
                         controller  : 'DashboardSidenavController',
                         controllerAs: 'sidenav'
                     },
                     'aside@dashboard' : {
-                        templateUrl : view('dashboard.aside'),
+                        templateUrl : layoutProvider.view('dashboard.aside'),
                         controller  : 'DashboardAsideController',
                         controllerAs: 'aside'
                     },
                     'footer@dashboard': {
-                        templateUrl : view('dashboard.footer'),
+                        templateUrl : layoutProvider.view('dashboard.footer'),
                         controller  : 'DashboardFooterController',
                         controllerAs: 'footer'
                     },
@@ -54,66 +54,12 @@
                 data : {pageName: 'Overview'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : view('dashboard.home'),
+                        templateUrl : layoutProvider.view('dashboard.home'),
                         controller  : 'DashboardHomeController',
                         controllerAs: 'home'
                     }
                 }
             });
-
-        function dashboard(viewName) {
-            if (viewName !== '') {
-                return './views/dashboard/' + appName(viewName) + '/' + fileDir(viewName) + '/' + fileName(viewName) + '.html';
-            } else {
-                return './views/app/app/home/home.html';
-            }
-        }
-
-        function view(viewName) {
-            if (viewName !== '') {
-                return './views/app/' + appName(viewName) + '/' + fileDir(viewName) + '/' + fileName(viewName) + '.html';
-            } else {
-                return './views/app/app/home/home.html';
-            }
-        }
-
-        function layout(viewName) {
-            if (viewName !== '') {
-                return './views/layouts/' + appName(viewName) + '/' + fileDir(viewName) + '/' + fileName(viewName) + '.html';
-            } else {
-                return './views/layouts/themes/default/minimalist.html';
-            }
-        }
-
-        function appName(v) {
-            if (v.split('.')[0]) {
-                return v.split('.')[0];
-            } else {
-                return 'app';
-            }
-        }
-
-        function fileDir(v) {
-            if (v.split('.')[1]) {
-                return v.split('.')[1];
-            } else if (!v.split('.')[0]) {
-                return v;
-            } else {
-                return 'home';
-            }
-        }
-
-        function fileName(v) {
-            if (v.split('.')[2]) {
-                return v.split('.')[2];
-            } else if (!v.split('.')[2]) {
-                if (v.split('.')[1]) {
-                    return v.split('.')[1];
-                }
-            } else {
-                return 'home';
-            }
-        }
 
     }
 
