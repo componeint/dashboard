@@ -1,4 +1,10 @@
-<?php namespace Onderdelen\Dashboard;
+<?php
+/**
+ * DashboardServiceProvider.php
+ * Created by anonymous on 08/12/15 17:00.
+ */
+
+namespace Onderdelen\Dashboard;
 
 use ReflectionClass;
 use Illuminate\Foundation\AliasLoader;
@@ -6,7 +12,6 @@ use Illuminate\Support\ServiceProvider;
 
 class DashboardServiceProvider extends ServiceProvider
 {
-
     /**
      * Indicates if loading of the provider is deferred.
      *
