@@ -14,6 +14,7 @@
 
     /* @ngInject */
     function dashboardRouter($stateProvider, $urlRouterProvider, layoutProvider) {
+
         $urlRouterProvider.otherwise('/');
 
         $stateProvider
@@ -32,8 +33,8 @@
                         controllerAs: 'header'
                     },
                     'sidenav@dashboard': {
-                        templateUrl : layoutProvider.layout('minimalist.sidenav'),
-                        controller  : 'SidenavController',
+                        templateUrl : layoutProvider.view('dashboard.sidenav'),
+                        controller  : 'DashboardSidenavController',
                         controllerAs: 'sidenav'
                     },
                     'aside@dashboard'  : {
@@ -53,12 +54,6 @@
                 url  : '/',
                 data : {pageName: 'Overview'},
                 views: {
-
-                    'sidenav@dashboard': {
-                        templateUrl : layoutProvider.view('dashboard.sidenav'),
-                        controller  : 'DashboardSidenavController',
-                        controllerAs: 'sidenav'
-                    },
                     'main@dashboard'   : {
                         templateUrl : layoutProvider.view('dashboard.home'),
                         controller  : 'DashboardHomeController',
