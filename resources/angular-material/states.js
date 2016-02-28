@@ -22,28 +22,28 @@
                 url     : '/dashboard',
                 views   : {
                     'layout@'         : {
-                        templateUrl : layoutProvider.layout('themes.minimalist'),
+                        templateUrl : layoutProvider.layout('minimalist.theme'),
                         controller  : 'DashboardController',
                         controllerAs: 'dashboard'
                     },
                     'header@dashboard': {
-                        templateUrl : layoutProvider.view('dashboard.header'),
-                        controller  : 'DashboardHeaderController',
+                        templateUrl : layoutProvider.layout('minimalist.header'),
+                        controller  : 'HeaderController',
                         controllerAs: 'header'
                     },
                     'sidenav@dashboard'  : {
-                        templateUrl : layoutProvider.view('dashboard.sidenav'),
-                        controller  : 'DashboardSidenavController',
+                        templateUrl : layoutProvider.layout('minimalist.sidenav'),
+                        controller  : 'SidenavController',
                         controllerAs: 'sidenav'
                     },
                     'aside@dashboard' : {
-                        templateUrl : layoutProvider.view('dashboard.aside'),
-                        controller  : 'DashboardAsideController',
+                        templateUrl : layoutProvider.layout('minimalist.aside'),
+                        controller  : 'AsideController',
                         controllerAs: 'aside'
                     },
                     'footer@dashboard': {
-                        templateUrl : layoutProvider.view('dashboard.footer'),
-                        controller  : 'DashboardFooterController',
+                        templateUrl : layoutProvider.layout('minimalist.footer'),
+                        controller  : 'FooterController',
                         controllerAs: 'footer'
                     },
                     'main@dashboard'  : {}
