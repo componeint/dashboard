@@ -10,12 +10,14 @@
         .module('dashboard')
         .controller('GroupsEditController', GroupsEditController);
 
-    GroupsEditController.$inject = ['$stateParams', 'Groups'];
+    GroupsEditController.$inject = ['$stateParams'];
 
     /* @ngInject */
-    function GroupsEditController($stateParams, Groups) {
+    function GroupsEditController($stateParams) {
+
         var vm  = this;
         vm.data = {id: $stateParams.id};
+
 
         activate();
 
