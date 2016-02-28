@@ -1,4 +1,5 @@
 /**
+ * home.controller.js
  * Created by anonymous on 09/12/15 15:42.
  */
 
@@ -13,8 +14,9 @@
 
     /* @ngInject */
     function DashboardHomeController() {
+
         var vm   = this;
-        vm.title = 'DashboardHomeController';
+
 
         activate();
 
