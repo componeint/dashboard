@@ -11,7 +11,9 @@
 
             /* Shared */
             'appFoundation',
-            'widgets'
+            'widgets',
+
+            'seneschal'
 
         ]);
 
