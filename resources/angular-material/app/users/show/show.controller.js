@@ -10,12 +10,14 @@
         .module('dashboard')
         .controller('UsersShowController', UsersShowController);
 
-    UsersShowController.$inject = ['$stateParams', 'Users'];
+    UsersShowController.$inject = ['$stateParams'];
 
     /* @ngInject */
-    function UsersShowController($stateParams, Users) {
+    function UsersShowController($stateParams) {
+
         var vm  = this;
         vm.data = {id: $stateParams.id};
+
 
         activate();
 
