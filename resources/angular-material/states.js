@@ -67,7 +67,7 @@
                 data : {pageName: 'Groups'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.dashboard('groups.index'),
+                        templateUrl : layoutProvider.view('groups.index'),
                         controller  : 'GroupsIndexController',
                         controllerAs: 'index'
                     }
@@ -78,7 +78,7 @@
                 data : {pageName: 'Create'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.dashboard('groups.create'),
+                        templateUrl : layoutProvider.view('groups.create'),
                         controller  : 'GroupsCreateController',
                         controllerAs: 'create'
                     }
@@ -89,7 +89,7 @@
                 data : {pageName: 'Show'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.dashboard('groups.show'),
+                        templateUrl : layoutProvider.view('groups.show'),
                         controller  : 'GroupsShowController',
                         controllerAs: 'show'
                     }
@@ -100,7 +100,7 @@
                 data : {pageName: 'Edit'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.dashboard('groups.edit'),
+                        templateUrl : layoutProvider.view('groups.edit'),
                         controller  : 'GroupsEditController',
                         controllerAs: 'edit'
                     }
@@ -111,7 +111,7 @@
                 data : {pageName: 'Users'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.dashboard('users.index'),
+                        templateUrl : layoutProvider.view('users.index'),
                         controller  : 'UsersIndexController',
                         controllerAs: 'index'
                     }
@@ -122,7 +122,7 @@
                 data : {pageName: 'Create'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.dashboard('users.create'),
+                        templateUrl : layoutProvider.view('users.create'),
                         controller  : 'UsersCreateController',
                         controllerAs: 'create'
                     }
@@ -133,7 +133,7 @@
                 data : {pageName: 'Show'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.dashboard('users.show'),
+                        templateUrl : layoutProvider.view('users.show'),
                         controller  : 'UsersShowController',
                         controllerAs: 'show'
                     }
@@ -144,7 +144,7 @@
                 data : {pageName: 'Edit'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.dashboard('users.edit'),
+                        templateUrl : layoutProvider.view('users.edit'),
                         controller  : 'UsersEditController',
                         controllerAs: 'edit'
                     }
@@ -155,7 +155,7 @@
                 data : {pageName: 'Edit Membership'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.dashboard('users.edit-membership'),
+                        templateUrl : layoutProvider.view('users.edit-membership'),
                         controller  : 'UsersEditMembershipController',
                         controllerAs: 'edit'
                     }
@@ -166,7 +166,7 @@
                 data : {pageName: 'Edit Password'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.dashboard('users.edit-password'),
+                        templateUrl : layoutProvider.view('users.edit-password'),
                         controller  : 'UsersEditPasswordController',
                         controllerAs: 'edit'
                     }
