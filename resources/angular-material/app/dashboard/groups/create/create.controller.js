@@ -14,7 +14,9 @@
 
     /* @ngInject */
     function GroupsCreateController() {
+
         var vm = this;
+
 
         activate();
 
