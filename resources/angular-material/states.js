@@ -21,39 +21,45 @@
                 abstract: true,
                 url     : '/dashboard',
                 views   : {
-                    'layout@'         : {
+                    'layout@'          : {
                         templateUrl : layoutProvider.layout('minimalist.theme'),
                         controller  : 'DashboardController',
                         controllerAs: 'dashboard'
                     },
-                    'header@dashboard': {
+                    'header@dashboard' : {
                         templateUrl : layoutProvider.layout('minimalist.header'),
                         controller  : 'HeaderController',
                         controllerAs: 'header'
                     },
-                    'sidenav@dashboard'  : {
+                    'sidenav@dashboard': {
                         templateUrl : layoutProvider.layout('minimalist.sidenav'),
                         controller  : 'SidenavController',
                         controllerAs: 'sidenav'
                     },
-                    'aside@dashboard' : {
+                    'aside@dashboard'  : {
                         templateUrl : layoutProvider.layout('minimalist.aside'),
                         controller  : 'AsideController',
                         controllerAs: 'aside'
                     },
-                    'footer@dashboard': {
+                    'footer@dashboard' : {
                         templateUrl : layoutProvider.layout('minimalist.footer'),
                         controller  : 'FooterController',
                         controllerAs: 'footer'
                     },
-                    'main@dashboard'  : {}
+                    'main@dashboard'   : {}
                 }
             })
             .state('dashboard.home', {
                 url  : '/',
                 data : {pageName: 'Overview'},
                 views: {
-                    'main@dashboard': {
+
+                    'sidenav@dashboard': {
+                        templateUrl : layoutProvider.view('dashboard.sidenav'),
+                        controller  : 'DashboardSidenavController',
+                        controllerAs: 'sidenav'
+                    },
+                    'main@dashboard'   : {
                         templateUrl : layoutProvider.view('dashboard.home'),
                         controller  : 'DashboardHomeController',
                         controllerAs: 'home'
