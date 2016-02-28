@@ -14,7 +14,9 @@
 
     /* @ngInject */
     function UsersCreateController() {
+
         var vm = this;
+
 
         activate();
 
