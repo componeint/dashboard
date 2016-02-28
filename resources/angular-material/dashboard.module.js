@@ -8,12 +8,11 @@
 
     angular
         .module('dashboard', [
+
             /* Shared */
             'appFoundation',
-            'widgets',
+            'widgets'
 
-            /* components */
-            'seneschal'
         ]);
 
 })();
