@@ -14,7 +14,9 @@
 
     /* @ngInject */
     function UsersIndexController() {
+
         var vm = this;
+
 
         activate();
 
