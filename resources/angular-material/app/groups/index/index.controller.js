@@ -14,7 +14,9 @@
 
     /* @ngInject */
     function GroupsIndexController() {
+
         var vm = this;
+
 
         activate();
 
