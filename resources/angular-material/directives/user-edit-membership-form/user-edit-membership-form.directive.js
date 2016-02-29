@@ -37,10 +37,10 @@
         }
     }
 
-    UserEditMembershipFormController.$inject = ['API', 'logService', 'Toast'];
+    UserEditMembershipFormController.$inject = ['API', 'logService', 'Toast', '$state'];
 
     /* @ngInject */
-    function UserEditMembershipFormController(API, logService, Toast) {
+    function UserEditMembershipFormController(API, logService, Toast, $state) {
 
         var vm            = this;
         var
@@ -48,7 +48,6 @@
             stateRedirect = _.isEmpty(vm.successStateRedirect) ? 'dashboard.users' : vm.successStateRedirect;
 
         vm.updateGroupMemberships = updateGroupMemberships;
-
 
         activate();
 
@@ -80,7 +79,8 @@
 
             API.one('users', id).post('memberships', vm.formData).then(function(response) {
 
-                // $state.go('dashboard.users');
+                $state.go(stateRedirect);
+
                 Toast.show('User group membership updated');
 
             }, function(error) {
