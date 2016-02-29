@@ -34,7 +34,7 @@
                         controllerAs: 'header'
                     },
                     'sidenav@dashboard': {
-                        templateUrl : layoutProvider.view('dashboard.sidenav'),
+                        templateUrl : layoutProvider.dashboard('app.sidenav'),
                         controller  : 'DashboardSidenavController',
                         controllerAs: 'sidenav'
                     },
@@ -56,7 +56,7 @@
                 data : {pageName: 'Overview'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.view('dashboard.home'),
+                        templateUrl : layoutProvider.dashboard('app.home'),
                         controller  : 'DashboardHomeController',
                         controllerAs: 'home'
                     }
@@ -67,7 +67,7 @@
                 data : {pageName: 'Groups'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.view('groups.index'),
+                        templateUrl : layoutProvider.dashboard('groups.index'),
                         controller  : 'GroupsIndexController',
                         controllerAs: 'index'
                     }
@@ -78,7 +78,7 @@
                 data : {pageName: 'Create'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.view('groups.create'),
+                        templateUrl : layoutProvider.dashboard('groups.create'),
                         controller  : 'GroupsCreateController',
                         controllerAs: 'create'
                     }
@@ -89,7 +89,7 @@
                 data : {pageName: 'Show'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.view('groups.show'),
+                        templateUrl : layoutProvider.dashboard('groups.show'),
                         controller  : 'GroupsShowController',
                         controllerAs: 'show'
                     }
@@ -100,7 +100,7 @@
                 data : {pageName: 'Edit'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.view('groups.edit'),
+                        templateUrl : layoutProvider.dashboard('groups.edit'),
                         controller  : 'GroupsEditController',
                         controllerAs: 'edit'
                     }
@@ -111,7 +111,7 @@
                 data : {pageName: 'Users'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.view('users.index'),
+                        templateUrl : layoutProvider.dashboard('users.index'),
                         controller  : 'UsersIndexController',
                         controllerAs: 'index'
                     }
@@ -122,7 +122,7 @@
                 data : {pageName: 'Create'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.view('users.create'),
+                        templateUrl : layoutProvider.dashboard('users.create'),
                         controller  : 'UsersCreateController',
                         controllerAs: 'create'
                     }
@@ -133,7 +133,7 @@
                 data : {pageName: 'Show'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.view('users.show'),
+                        templateUrl : layoutProvider.dashboard('users.show'),
                         controller  : 'UsersShowController',
                         controllerAs: 'show'
                     }
@@ -144,7 +144,7 @@
                 data : {pageName: 'Edit'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.view('users.edit'),
+                        templateUrl : layoutProvider.dashboard('users.edit'),
                         controller  : 'UsersEditController',
                         controllerAs: 'edit'
                     }
@@ -155,7 +155,7 @@
                 data : {pageName: 'Edit Membership'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.view('users.edit-membership'),
+                        templateUrl : layoutProvider.dashboard('users.edit-membership'),
                         controller  : 'UsersEditMembershipController',
                         controllerAs: 'edit'
                     }
@@ -166,7 +166,7 @@
                 data : {pageName: 'Edit Password'},
                 views: {
                     'main@dashboard': {
-                        templateUrl : layoutProvider.view('users.edit-password'),
+                        templateUrl : layoutProvider.dashboard('users.edit-password'),
                         controller  : 'UsersEditPasswordController',
                         controllerAs: 'edit'
                     }
