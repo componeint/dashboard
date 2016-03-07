@@ -1,17 +1,17 @@
 {
-  "name"             : "onderdelen/dashboard",
+  "name"             : "componeint/dashboard",
   "description"      : "Description dashboard.",
   "keywords"         : [
-    "onderdelen",
+    "componeint",
     "dashboard"
   ],
-  "homepage"         : "https://github.com/onderdelen/dashboard",
+  "homepage"         : "https://github.com/componeint/dashboard",
   "license"          : "MIT",
   "authors"          : [
     {
       "name"    : "anonymoussc",
       "email"   : "50c5ac69@opayq.com",
-      "homepage": "https://github.com/onderdelen/",
+      "homepage": "https://github.com/componeint/",
       "role"    : "Developer"
     }
   ],
@@ -33,12 +33,12 @@
       "tests"
     ],
     "psr-4"   : {
-      "Onderdelen\\Dashboard\\": "src"
+      "Componeint\\Dashboard\\": "src"
     }
   },
   "autoload-dev"     : {
     "psr-4": {
-      "Onderdelen\\Dashboard\\Test\\": "tests"
+      "Componeint\\Dashboard\\Test\\": "tests"
     }
   },
   "minimum-stability": "stable"

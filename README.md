@@ -17,14 +17,14 @@ PSRs you support to avoid any confusion with users and contributors.
 Via Composer
 
 ``` bash
-$ composer require onderdelen/dashboard
+$ composer require componeint/dashboard
 ```
 
 ## Usage
 
 ``` php
-$dashboard = new Onderdelen\Dashboard();
-echo $dashboard->echoPhrase('Hello, Onderdelen!');
+$dashboard = new Componeint\Dashboard();
+echo $dashboard->echoPhrase('Hello, Componeint!');
 ```
 
 ## Change log
@@ -54,17 +54,17 @@ If you discover any security related issues, please email 50c5ac69@opayq.com ins
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/onderdelen/dashboard.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/componeint/dashboard.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/onderdelen/dashboard/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/onderdelen/dashboard.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/onderdelen/dashboard.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/onderdelen/dashboard.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/componeint/dashboard/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/componeint/dashboard.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/componeint/dashboard.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/componeint/dashboard.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/onderdelen/dashboard
-[link-travis]: https://travis-ci.org/onderdelen/dashboard
-[link-scrutinizer]: https://scrutinizer-ci.com/g/onderdelen/dashboard/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/onderdelen/dashboard
-[link-downloads]: https://packagist.org/packages/onderdelen/dashboard
-[link-author]: https://github.com/onderdelen
+[link-packagist]: https://packagist.org/packages/componeint/dashboard
+[link-travis]: https://travis-ci.org/componeint/dashboard
+[link-scrutinizer]: https://scrutinizer-ci.com/g/componeint/dashboard/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/componeint/dashboard
+[link-downloads]: https://packagist.org/packages/componeint/dashboard
+[link-author]: https://github.com/componeint
 [link-contributors]: ../../contributors

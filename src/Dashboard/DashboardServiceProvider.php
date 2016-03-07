@@ -4,7 +4,7 @@
  * Created by anonymous on 08/12/15 17:00.
  */
 
-namespace Onderdelen\Dashboard;
+namespace Componeint\Dashboard;
 
 use ReflectionClass;
 use Illuminate\Foundation\AliasLoader;
@@ -36,8 +36,8 @@ class DashboardServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->register(\Onderdelen\AppFoundation\AppFoundationServiceProvider::class);
-        $this->app->register(\Onderdelen\Seneschal\SeneschalServiceProvider::class);
+        $this->app->register(\Componeint\AppFoundation\AppFoundationServiceProvider::class);
+        $this->app->register(\Componeint\Seneschal\SeneschalServiceProvider::class);
     }
 
     /**
