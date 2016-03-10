@@ -36,8 +36,7 @@ class DashboardServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->register(\Componeint\AppFoundation\AppFoundationServiceProvider::class);
-        $this->app->register(\Componeint\Seneschal\SeneschalServiceProvider::class);
+        //
     }
 
     /**
