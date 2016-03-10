@@ -13,6 +13,7 @@
             'appFoundation',
             'widgets',
 
+            /* Components */
             'seneschal'
 
         ]);
