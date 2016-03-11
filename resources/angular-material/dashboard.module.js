@@ -8,13 +8,9 @@
 
     angular
         .module('dashboard', [
-
             /* Shared */
-            'appFoundation',
-            'widgets',
 
             /* Components */
-            'seneschal'
 
         ]);
 
