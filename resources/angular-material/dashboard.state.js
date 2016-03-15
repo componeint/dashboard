@@ -1,5 +1,5 @@
 /**
- * states.js
+ * dashboard.state.js
  * Created by anonymous on 09/12/15 13:11.
  */
 
