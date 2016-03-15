@@ -8,12 +8,12 @@
 
     angular
         .module('dashboard')
-        .config(dashboardRouter);
+        .config(dashboardState);
 
-    dashboardRouter.$inject = ['$stateProvider', '$urlRouterProvider', '$httpProvider', '$provide', 'layoutProvider'];
+    dashboardState.$inject = ['$stateProvider', '$urlRouterProvider', '$httpProvider', '$provide', 'layoutProvider'];
 
     /* @ngInject */
-    function dashboardRouter($stateProvider, $urlRouterProvider, $httpProvider, $provide, layoutProvider) {
+    function dashboardState($stateProvider, $urlRouterProvider, $httpProvider, $provide, layoutProvider) {
         $provide.factory('redirectWhenLoggedOut', redirectWhenLoggedOut);
         $httpProvider.interceptors.push('redirectWhenLoggedOut');
         $urlRouterProvider.otherwise('/');
@@ -180,6 +180,7 @@
             };
 
             function responseError(rejection) {
+
                 var
                     $state           = $injector.get('$state'),
                     rejectionReasons = ['token_not_provided', 'token_expired', 'token_absent', 'token_invalid'];
@@ -192,13 +193,16 @@
                 });
 
                 return $q.reject(rejection);
+
             }
 
             return respError;
         }
 
         function skipIfLoggedIn($q, $auth) {
+
             var deferred = $q.defer();
+
             if ($auth.isAuthenticated()) {
                 deferred.reject();
             } else {
@@ -206,6 +210,7 @@
             }
 
             return deferred.promise;
+
         }
 
         function loginRequired($q, $state, $auth) {
