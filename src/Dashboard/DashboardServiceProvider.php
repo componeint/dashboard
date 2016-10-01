@@ -53,5 +53,4 @@ class DashboardServiceProvider extends ServiceProvider
     {
         return [];
     }
-
 }
