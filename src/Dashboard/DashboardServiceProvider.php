@@ -1,7 +1,7 @@
 <?php
 /**
  * DashboardServiceProvider.php
- * Created by anonymous on 08/12/15 17:00.
+ * Created by @anonymoussc on 08/12/15 17:00.
  */
 
 namespace Componeint\Dashboard;
@@ -26,7 +26,12 @@ class DashboardServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $componenentsFileName = with(new ReflectionClass('\Componeint\Dashboard\DashboardServiceProvider'))->getFileName();
+        $componenentsPath     = dirname($componenentsFileName);
 
+        $this->loadViewsFrom($componenentsPath . '/../../resources/views', 'dashboard');
+
+        // include $componenentsPath . '/../routes.php';
     }
 
     /**
