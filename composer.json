@@ -28,9 +28,7 @@
   },
   "autoload"         : {
     "classmap": [
-      "database/seeds",
-      "src/controllers",
-      "tests"
+      "database"
     ],
     "psr-4"   : {
       "Componeint\\Dashboard\\": "src"
